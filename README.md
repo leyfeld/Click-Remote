@@ -23,7 +23,7 @@ User flow:
 
 Public links (replace with your real URLs):
 - App Store: `https://apps.apple.com/app/id<YOUR_APP_ID>`
-- macOS DMG releases: `https://github.com/<owner>/<repo>/releases`
+- macOS DMG releases: `https://github.com/leyfeld/Click-Remote/releases`
 
 ## Features
 
