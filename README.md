@@ -8,21 +8,22 @@ The repository contains one app:
 ## For End Users
 
 Distribution model:
-- iOS app: published in the App Store
-- macOS server: distributed as `.dmg` in GitHub Releases
+- iOS app: published in the App Store https://apps.apple.com/app/click-remote/id6760541892
+- macOS server: distributed as `.dmg` in GitHub Releases  https://github.com/leyfeld/Click-Remote/releases
 
 User flow:
 1. Install iOS app from the App Store.
-2. Open this repository and download the latest macOS `.dmg` from Releases.
-3. Install and launch the macOS app.
-4. Grant permission in `System Settings -> Privacy & Security -> Accessibility`.
-5. Pair devices:
+2. Launch the iOS app and allow `Local Network` access when prompted (required to connect to your Mac).
+3. Open this repository and download the latest macOS `.dmg` from Releases.
+4. Install and launch the macOS app.
+5. Grant permission in `System Settings -> Privacy & Security -> Accessibility`.
+6. Pair devices:
    - Preferred: open menu bar icon on Mac -> `QRcode`, then scan from iOS app.
    - Alternative: add server manually via `name + ip + port`.
-6. Tap a device in the list to connect and open the control screen.
+7. Tap a device in the list to connect and open the control screen.
 
 Public links (replace with your real URLs):
-- App Store: `https://apps.apple.com/app/id<YOUR_APP_ID>`
+- App Store: `https://apps.apple.com/app/click-remote/id6760541892`
 - macOS DMG releases: `https://github.com/leyfeld/Click-Remote/releases`
 
 ## Features
@@ -42,6 +43,12 @@ Public links (replace with your real URLs):
 - iOS app connects to macOS app over local TCP.
 - Default server port: `4717`.
 
+## Notes
+
+- The iOS app uses Camera permission only for QR pairing.
+- The iOS app uses Local Network permission to connect to your Mac.
+- The macOS app must have Accessibility permission to send system key/mouse events.
+
 ## Requirements
 
 - Xcode 15+
@@ -59,7 +66,6 @@ Public links (replace with your real URLs):
   Analytics, Crashlytics, Remote Config
 
 
-## Notes
 
-- iOS app requests camera access for QR scanning.
-- macOS app must have Accessibility permission to send system key/mouse events.
+
+﻿
